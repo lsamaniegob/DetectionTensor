@@ -40,18 +40,20 @@
         app:layout_constraintLeft_toRightOf="@+id/btGallery"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_margin="10dp"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/btGallery"
-        app:layout_constraintBottom_toTopOf="@+id/txtresults" />
+        android:background="@android:color/black"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtresults"
+        app:layout_constraintTop_toBottomOf="@+id/btGallery">
+    </FrameLayout>
 
     <TextView
         android:id="@+id/txtresults"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_margin="10dp"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
